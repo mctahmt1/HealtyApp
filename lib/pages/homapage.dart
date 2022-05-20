@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healty_app/const/colors.dart';
+import 'package:healty_app/icons/icons.dart';
 import 'package:healty_app/photos/images.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,6 +25,7 @@ Widget homePage({GlobalKey<ScaffoldState>? key}) => SafeArea(
         backgroundColor: AppColors.backGroundColor,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.asset(
               AppImages.homeImage,
@@ -31,19 +33,16 @@ Widget homePage({GlobalKey<ScaffoldState>? key}) => SafeArea(
             const Text(
               'Your body need water',
               style: TextStyle(
-                fontFamily: 'Koulen',
+                fontFamily: 'SerifDisplay',
                 fontSize: 28,
                 color: AppColors.homePageFont,
               ),
             ),
-            const SizedBox(
-              height: 24,
-              child: Text('Track your daily water intake in just a few taps!',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: AppColors.homePageFont2,
-                  )),
-            ),
+            const Text('Track your daily water intake in just a few taps!',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: AppColors.homePageFont2,
+                )),
           ],
         ),
       ),

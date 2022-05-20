@@ -72,9 +72,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Koulen
+    - family: SerifDisplay
       fonts:
-        - asset: assets/fonts/Koulen-Regular.ttf
+        - asset: assets/fonts/DMSerifDisplay-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
